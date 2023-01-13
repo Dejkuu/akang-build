@@ -2,22 +2,22 @@ const express = require('express');
 const router = express.Router();
 const API = require('../controllers/api.js');
 
-router.get('/users', API.fetchAllUsers)
-router.post('/user', API.fetchUser)
-router.post('/newUser', API.createUser)
+router.get('/api/users', API.fetchAllUsers)
+router.post('/api/user', API.fetchUser)
+router.post('/api/newUser', API.createUser)
 
-router.post('/getUserNV', API.fetchUser_NV)
-router.patch('/user', API.updateUser)
+router.post('/api/getUserNV', API.fetchUser_NV)
+router.patch('/api/user', API.updateUser)
 
-router.get('/links', API.fetchAllLinks)
-router.post('/link', API.postLink)
-router.delete('/link', API.deleteLink)
+router.get('/api/links', API.fetchAllLinks)
+router.post('/api/link', API.postLink)
+router.delete('/api/link', API.deleteLink)
 
-router.get('/tasks', API.fetchAllTasks)
-router.post('/task', API.postTask)
-router.delete('/task', API.deleteTask)
-router.patch('/task', API.updateTask)
+router.get('/api/tasks', API.fetchAllTasks)
+router.post('/api/task', API.postTask)
+router.delete('/api/task', API.deleteTask)
+router.patch('/api/task', API.updateTask)
 
-router.get('/notifications', API.fetchAllNotifications)
+router.get('/api/notifications', API.fetchAllNotifications)
 
 module.exports = router;
