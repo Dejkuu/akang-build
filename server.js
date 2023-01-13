@@ -24,6 +24,6 @@ const mongoose = require('mongoose');
 mongoose.set('strictQuery', false)
 mongoose.connect(process.env.Database)
 
-app.listen(process.env.PORT, 'localhost', () => {
-    console.log(`listening on ${process.env.PORT}`);
+app.listen(3000, 'localhost', () => {
+    console.log(`listening on 3000`);
 })
